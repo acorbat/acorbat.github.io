@@ -1,0 +1,127 @@
+# Project Context: acorbat.github.io
+
+## Project Overview
+Personal portfolio and professional webpage for **Agustin Corbat**, a Senior Image and Data Analyst with a PhD in Physics and expertise in bioimage analysis. The site serves as a comprehensive record of professional work, research projects, CV, and contact information.
+
+## Project Purpose
+- Showcase professional portfolio and completed projects
+- Display expertise in image analysis, biophysics, and deep learning
+- Provide CV/resume information
+- Enable contact and professional networking
+- Archive project details, research collaborations, and technical work
+
+## Professional Profile
+- **Title**: Senior Image and Data Analyst, Physicist, BioImage Analyst
+- **Expertise**: Image analysis, deep learning, physics-based modeling, bioimage analysis, scientific computing
+- **Background**: PhD Physicist with practical knowledge from a core medicine career
+- **Focus**: Turning complex visual data from any source into clear, measurable results
+
+## File Structure
+
+### Main Pages
+- `index.html` - Home page with hero section, about, portfolio, services, resume, and contact
+- `inner-page.html` - Template for inner pages
+- `portfolio-details.html` - Template for portfolio project details
+
+### Project Detail Pages (Individual HTML files)
+Portfolio projects showcasing various research and professional work:
+- Research projects: `Corbat_2018-details.html`, `Corbat_2021-details.html`, `Thesis_2021-details.html`
+- Collaboration projects: 
+  - `deHaan_2024-details.html`
+  - `Fernandez_2021-details.html`, `Fernandez_2025-details.html`
+  - `Habif_2021-details.html`
+  - `Iqbal_2023-details.html`
+  - `Salgueiro_2021-details.html`
+- Specialized projects:
+  - `ai4life-11.html`, `ai4life-38.html` (AI for Life initiatives)
+  - `calbs-kidney.html` (CALBS Kidney)
+  - `ccm-mri.html` (CCM MRI)
+  - `Gulliver-details.html`
+  - `Organoids_2019-details.html`
+  - `objpredict-details.html`
+  - `perivascular-TAM-details.html`
+  - `petrotec-details.html`
+  - `soma-details.html`
+  - `trex-details.html`
+
+### Assets
+- `assets/css/style.css` - Main stylesheet
+- `assets/js/main.js` - Main JavaScript functionality
+- `assets/vendor/` - Third-party libraries and frameworks:
+  - Bootstrap (grid, utilities, CSS framework)
+  - Bootstrap Icons
+  - Boxicons (additional icons)
+  - GLightbox (image gallery lightbox)
+  - Swiper (carousel/slider)
+  - Typed.js (typing animation)
+  - AOS (Animate On Scroll)
+  - Isotope (portfolio filtering/layout)
+  - Waypoints (scroll triggering)
+  - PureCounter (number animations)
+
+### Forms
+- `forms/contact.php` - Backend for contact form submissions
+
+### Documentation
+- `README.md` - Credits to the iPortfolio Bootstrap template
+- `LICENSE` - Project license
+
+## Technology Stack
+- **Framework**: Bootstrap 5.3.1 (responsive HTML/CSS framework)
+- **Template Base**: iPortfolio (BootstrapMade.com template)
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Libraries**: 
+  - Typed.js for hero section animations
+  - GLightbox for image galleries
+  - Swiper for carousels
+  - AOS for scroll animations
+  - Isotope for portfolio filtering
+  - Waypoints for scroll triggers
+- **Backend**: PHP (contact form)
+- **Hosting**: GitHub Pages
+
+## Key Features
+1. Responsive design for mobile, tablet, and desktop
+2. Smooth scrolling navigation
+3. Animated hero section with typed text describing roles
+4. Portfolio grid with project filtering
+5. Services section describing professional offerings
+6. Resume/CV section
+7. Contact form with PHP backend
+8. Social media links (GitHub, Bluesky, Twitter, LinkedIn)
+9. Image galleries and lightbox for project showcases
+10. Scroll animations for visual engagement
+
+## Site Sections
+1. **Home** - Hero section with animated typing of roles
+2. **About** - Professional biography and expertise summary
+3. **Portfolio** - Grid of project case studies with filtering
+4. **Services** - Professional services offered
+5. **Resume** - CV and professional history
+6. **Contact** - Contact form and information
+
+## Main Customizations
+- Profile image and personal information (name, social links)
+- Custom project detail pages for each portfolio item
+- Specialized projects tailored to different research areas
+
+## Development Notes
+- Static site generated from HTML templates
+- All styling centralized in `assets/css/style.css`
+- JavaScript interactions in `assets/js/main.js`
+- Third-party dependencies managed in `assets/vendor/`
+- Contact form backend in `forms/contact.php`
+- Version controlled with Git (.git directory present)
+
+## Target Audience
+- Potential employers and hiring managers
+- Research collaborators
+- Clients seeking image analysis and data consulting services
+- Academic connections
+- General professional networking
+
+## Related Resources
+- GitHub: https://github.com/acorbat
+- Bluesky: acorbat.bsky.social
+- Twitter: @aacorbat
+- LinkedIn: Agustín Andrés Corbat
