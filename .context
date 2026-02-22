@@ -59,6 +59,16 @@ Portfolio projects showcasing various research and professional work:
   - Waypoints (scroll triggering)
   - PureCounter (number animations)
 
+### Blog System
+Blog pages and posts are maintained in English and Spanish with chronological ordering:
+- `blog-en.html` - English blog list page (displays posts in reverse chronological order)
+- `blog-es.html` - Spanish blog list page (displays posts in reverse chronological order)
+- `blog-posts/` - Directory containing individual blog post files:
+  - `blog-post-template-en.html` - Template for creating new English blog posts
+  - `blog-post-template-es.html` - Template for creating new Spanish blog posts
+  - Individual blog posts follow naming pattern: `YYYY-MM-DD-post-slug-{en|es}.html`
+  - Example posts: `2026-02-22-welcome-en.html`, `2026-02-22-welcome-es.html`
+
 ### Forms
 - `forms/contact.php` - Backend for contact form submissions
 
@@ -105,13 +115,199 @@ Portfolio projects showcasing various research and professional work:
 - Custom project detail pages for each portfolio item
 - Specialized projects tailored to different research areas
 
-## Development Notes
-- Static site generated from HTML templates
-- All styling centralized in `assets/css/style.css`
-- JavaScript interactions in `assets/js/main.js`
-- Third-party dependencies managed in `assets/vendor/`
-- Contact form backend in `forms/contact.php`
-- Version controlled with Git (.git directory present)
+## Blog System
+
+### Overview
+The blog system provides a platform to share insights on image analysis, biophysics, and data science. All blog posts are published in both English and Spanish with a chronological list view (newest posts displayed first).
+
+### Blog Pages
+- **`blog-en.html`** - English blog listing page with all blog posts in reverse chronological order
+- **`blog-es.html`** - Spanish blog listing page ("Blog" header, navigation in Spanish, reverse chronological order)
+- Both pages include:
+  - Language selector (EN/ES links)
+  - Post listing with date, title, excerpt, and "Read More" link
+  - Post dates displayed in highlighted date boxes (day/month year format)
+  - Responsive layout using Bootstrap grid
+  - Integration with site header, navigation, and footer
+
+### Blog Posts Organization
+
+#### File Naming Convention
+All blog post files follow the pattern: `YYYY-MM-DD-post-slug-{en|es}.html`
+- `YYYY-MM-DD` - Publication date in ISO format (e.g., 2026-02-22)
+- `post-slug` - URL-friendly slug (lowercase, hyphens between words, no spaces)
+- `{en|es}` - Language suffix (en for English, es for Spanish)
+
+**Examples:**
+- `2026-02-22-welcome-en.html` (English post)
+- `2026-02-22-welcome-es.html` (Spanish equivalent)
+- `2026-02-22-scientific-romantic-en.html` (English post with multi-word slug)
+- `2026-02-22-cientifico-romatico.html` (Spanish equivalent)
+
+#### File Location
+All blog posts are stored in: `blog-posts/` directory
+
+#### Directory Structure
+- `blog-post-template-en.html` - English template
+- `blog-post-template-es.html` - Spanish template
+- `2026-02-22-welcome-en.html` - English blog post example
+- `2026-02-22-welcome-es.html` - Spanish blog post example
+- `2026-02-22-scientific-romantic-en.html` - Another English blog post
+- `2026-02-22-cientifico-romatico.html` - Spanish equivalent
+
+### Creating New Blog Posts
+
+#### Step 1: Copy the Template
+1. Copy `blog-post-template-en.html` (for English) or `blog-post-template-es.html` (for Spanish)
+2. Rename following the naming convention: `YYYY-MM-DD-post-slug-{en|es}.html`
+
+#### Step 2: Update Post Metadata
+In the `<head>` section:
+- Update `<title>` to: "Post Title - Agustin Corbat"
+- Update `<meta name="description">` with a brief description
+- Update `<meta name="keywords">` with relevant keywords
+
+#### Step 3: Update Post Content
+In the breadcrumbs section:
+- Update the `<h2>Blog Post</h2>` to the actual post title (optional)
+- Update language links to point to corresponding language version:
+  ```html
+  <a href="YYYY-MM-DD-post-slug-en.html" class="lang-link active">EN</a>
+  <a href="YYYY-MM-DD-post-slug-es.html" class="lang-link">ES</a>
+  ```
+- Update breadcrumb final item with post title
+
+In the post header:
+- Update `<h1 class="post-title">` with actual title
+- Update `<span class="post-date">` with publication date (format: "Month DD, YYYY")
+
+In the post content:
+- Replace all template content with actual blog post content
+- Use semantic HTML: `<h2>` for main sections, `<h3>` for subsections, `<p>` for paragraphs
+- Include images if needed (stored in `assets/img/blog/` directory)
+- Uncomment and update featured image section if using one
+
+#### Step 4: Create Language Pair
+For every English post created, also create a Spanish equivalent:
+- Copy the newly created English post
+- Translate the `<title>`, metadata, and post content
+- Update language links to match
+
+### Updating Blog List Pages
+
+#### Adding Posts to Blog Lists
+When a new blog post is created, it must be added to both `blog-en.html` and `blog-es.html`:
+
+**In `blog-en.html` and `blog-es.html`:**
+1. Add new post at the top of the blog list (newest posts first)
+2. Use the template comment provided in the file:
+   ```html
+   <article class="blog-post-item" data-aos="fade-up">
+     <div class="row">
+       <div class="col-md-2">
+         <div class="post-date">
+           <span class="day">DD</span>
+           <span class="month">MMM YYYY</span>
+         </div>
+       </div>
+       <div class="col-md-10">
+         <h3 class="post-title">
+           <a href="blog-posts/YYYY-MM-DD-post-slug-en.html">Post Title</a>
+         </h3>
+         <p class="post-excerpt">
+           Brief description of the post content...
+         </p>
+         <a href="blog-posts/YYYY-MM-DD-post-slug-en.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+       </div>
+     </div>
+   </article>
+   <hr style="margin: 2rem 0; opacity: 0.1;">
+   ```
+
+3. For Spanish posts in `blog-es.html`, update language and links accordingly
+
+#### Chronological Order Requirement
+- **IMPORTANT**: New posts must always be placed at the TOP of the blog list (before existing posts)
+- This ensures newest content appears first
+- Add `<hr>` separator between posts for visual separation
+
+### Blog Post Template Structure
+
+Both templates (`blog-post-template-en.html` and `blog-post-template-es.html`) include:
+
+1. **HTML Head**
+   - Meta tags for responsiveness, character encoding, description, keywords
+   - Asset links with `../` relative paths (for blog-posts subfolder)
+   - Compatible CSS/JS vendors
+
+2. **Header Navigation**
+   - Profile section with image and social links
+   - Navigation menu with all site sections
+   - Links use `../` prefix for parent directory access
+
+3. **Breadcrumb Navigation**
+   - Shows: Home > Blog > Post Title
+   - Language selector for switching between EN/ES versions
+
+4. **Blog Post Content Section**
+   - Post header with title and metadata (date, author)
+   - Optional featured image section
+   - Post content area with full article text
+   - Semantic HTML structure
+
+5. **Footer**
+   - Copyright and credits
+   - Back-to-top button
+
+6. **Scripts and Styling**
+   - All vendor JavaScript loaded from `../assets/vendor/`
+   - Main stylesheet from `../assets/css/style.css`
+   - Bootstrap framework for responsive layout
+
+### CSS Styling for Blog
+Blog-specific CSS is included in each page:
+- `.blog-post-item` - Individual post container styling
+- `.post-date` - Date box styling (blue background, centered)
+- `.post-title` - Post title styling with link
+- `.post-excerpt` - Brief post description
+- `.post-date .day` - Large day number (2rem font)
+- `.post-date .month` - Month/year text (0.9rem font)
+- `.read-more` - Link styling for "Read More" button
+
+### Best Practices
+
+1. **Naming Consistency**
+   - Always use lowercase hyphens in slugs
+   - Use ISO date format (YYYY-MM-DD)
+   - End with language suffix (-en or -es)
+
+2. **Content Organization**
+   - Write clear, descriptive excerpts for blog lists (2-3 sentences)
+   - Use logical heading structure (h1 for title, h2/h3 for sections)
+   - Keep posts scannable with subheadings and bullet points
+   - Add images from `assets/img/blog/` directory when relevant
+
+3. **Translation**
+   - Create both language versions before publishing
+   - Translate slugs appropriately (not just copy English slug)
+   - Ensure both language versions link to each other
+   - Keep dates consistent across language versions
+
+4. **List Maintenance**
+   - Always add new posts to the top of blog lists
+   - Remove `<hr>` separator from the last post if needed
+   - Verify all links work (relative paths are correct)
+   - Check language selectors point to correct versions
+
+5. **Publishing Workflow**
+   1. Create English post file with translated slug
+   2. Create Spanish post file with translated slug
+   3. Add both to `blog-en.html` at the top
+   4. Add both to `blog-es.html` at the top (in reverse, Spanish version first as it's the active language)
+   5. Test navigation and language switching
+   6. Commit to Git with descriptive message
+
+
 
 ## Target Audience
 - Potential employers and hiring managers
