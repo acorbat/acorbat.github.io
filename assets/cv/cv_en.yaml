@@ -206,6 +206,20 @@ Experience:
     description:
     - 'Advisor: Dr. Jorge B. Aquino'
   Professional:
+  - name: Guest Editor, Journal of Microscopy
+    date: '2026'
+    location: GloBIAS
+    description:
+    - "Served as Guest Editor for the special issue *Focus on the methods reproducibility
+      of bioimage analysis* as part of the Publications work group at GloBIAS.  [Link to special issue](https://onlinelibrary.wiley.com/toc/13652818/2026/304/2)"
+  - name: Ultrasound Reverberation Noise Removal Pipeline
+    date: 2026-04--2026-06
+    location: Apolo biotech, Argentina
+    description:
+    - Bioimage Analysis Consultant developing a reproducible prototype pipeline to
+      process 3D stacks of ultrasound images acquired with a prototype system and
+      remove reverberation noise using classical Fourier and wavelet transform-based
+      methods implemented with Python.
   - name: Bohus Biotech
     date: '2025'
     location: Uppsala, Sweden
@@ -224,6 +238,44 @@ Experience:
     - ST4407
     - Image analysis and machine learning applied to gigapixel petrography samples.
   Teaching and Mentoring Experience:
+  - name: Organizer, Jornada de Análisis de Imágenes
+    date: '2026'
+    location: FCEN, UBA, Buenos Aires, Argentina
+    description:
+    - Organized a full-day event dedicated to bioimage analysis
+    - Plenary talk
+    - 2 sessions on projects and project questions
+    - 'Workshop: "From pixel to quantification"'
+  - name: Organizer and Instructor, Bioimage Analysis Fundamentals Workshop (Train-the-Trainer)
+    date: '2026'
+    location: Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires,
+      Buenos Aires, Argentina
+    description:
+    - Held from August 3 to 7, 2026
+    - 40-hour workshop
+    - Included an asynchronous pre-course
+    - "Full Workshop Published in Zenodo. DOI: [10.5281/zenodo.22647866](https://doi.org/10.5281/zenodo.22647866)"
+  - name: Chief of Practicals (exclusive dedication)
+    date: 2026--actual
+    location: FCEN, UBA, Buenos Aires, Argentina
+    description:
+    - '**Laboratory 3**: Design, analysis and experimentation applied to electricity
+      and magnetism.'
+    - '**Laboratory 5**: Design, analysis and experimentation applied to Advanced Physics.'
+  - name: KhipuX Quito 2026
+    date: '2026'
+    location: Quito, Ecuador
+    description:
+    - 'Panel discussion: "Building regional capacity in AI for bio and medical imaging" with Andrea Lara, David Antonio Brito Imbaquingo, and Hernan Andres Morales-Navarrete'
+    - 'Mentorship circle: Guided young students on career development in AI and bioimage analysis'
+    - 'Workshop instructor: "Introduction to Bioimage Analysis"; [Slides](https://doi.org/10.5281/zenodo.18717815) and [Materials](https://doi.org/10.5281/zenodo.18772893) available on Zenodo'
+    - 'Event theme: "Democratizing AI in Bioimage and Medical Imaging"'
+  - name: Invited Lecturer
+    date: '2026'
+    location: Fundamentals of Optical Microscopy Course, Fundación Instituto Leloir
+    description:
+    - 1 week course
+    - '**Digital Image**: Theoretical lecture on digital images. [Link to Material](https://doi.org/10.5281/zenodo.16920045)'
   - name: Co-Organizer
     date: '2025'
     location: Light Sheet Image Analysis Workshop, Universidad Mayor, Santiago de
@@ -232,7 +284,7 @@ Experience:
     - 1 week course
     - As coorganizer of the workshop I participated in designing the schedule, learning
       outcomes and prepared 3 theoretical lectures and 2 hands-on workshops. [Link
-      al curso](https://bruvellu.github.io/light-sheet-image-analysis-workshop-2026/)
+      to webpage](https://bruvellu.github.io/light-sheet-image-analysis-workshop-2026/). [Link to materials](https://doi.org/10.5281/zenodo.18247226).
   - name: Invited Lecturer
     date: '2025'
     location: Fundamentals of Optical Microscopy Course, Fundación Instituto Leloir
@@ -287,7 +339,7 @@ Experience:
     - As a high school capstone project, students developed a technology project.
     - The project involved using a Raspberry Pi to capture images and alert a vehicle
       driver.
-  - name: Laboratorio 6 Student Supervision
+  - name: Laboratorio 6 and 7 Student Supervision
     date: 2025--2026
     location: Facultad de Ciencias Exactas y Naturales, University of Buenos Aires
     description:
@@ -363,6 +415,59 @@ Experience:
     - 10 weekly hours
 Production:
   Publications:
+  - title: Focus on the methods reproducibility of bioimage analysis
+    date: '2026'
+    journal: Journal of Microscopy
+    authors: Kota Miura, Christa G. Walther, Elnaz Fazeli, '**Agustin A. Corbat**',
+      Paula Sampaio, Rocco D'Antuono
+    description:
+    - 'doi: https://doi.org/10.1111/jmi.70188'
+  - title: 'In utero barcoding of mouse mesoderm reveals the clonal architecture of organ mesenchyme'
+    date: '2026'
+    journal: bioRxiv
+    authors: Jingyan He, Johan Lorentz, '**Agustin A. Corbat**', Sergey Isaev, Raphaël
+      Mauron, Sandra De Haan, Lenka Belicová, Jia Sun, Bettina Semsch, Noémi Van Hul,
+      Robert Tonoian, John Wilson, Ulrika Marklund, Marcel Martin, Neil C. Henderson,
+      Jonas Frisén, Michael Ratz, Peter V. Kharchenko, Igor Adameyko, Enikő Lázár,
+      Joakim Lundeberg, Emma R. Andersson
+    description:
+    - 'doi: https://doi.org/10.64898/2026.09.22.752134'
+  - title: 'AI4Life Open Calls and Public Challenges: why, how, and what we have learned.'
+    date: '2026'
+    journal: bioRxiv
+    authors: Vera Galinova, Mehdi Seifi, Beatriz Serrano Solano, Kristina Lidayova,
+      Damian Dalle Nogare, **Agustin A. Corbat**, Joshua Talks, Edoardo Giacomello,
+      Estibaliz Gomez-de-Mariscal, Mariana Gomes Ferreira, Caterina Fuster-Barcelo,
+      Juan Manuel Battagliotti, Carlos Garcia-Lopez-de-Haro, Benjamin Salmon, Melisande
+      Croft, Si Young Yie, Guillermo Rey-Paniagua, Xiaotian Hu, Sungjun Cho, Aagam
+      Sheth, Chhayansh Porwal, Xiaomeng Li, AI4Life Consortium, Ricardo Henriques,
+      Xinyang Li, Alexander Krull, Anna Klemm, Arrate Munoz Barrutia, Anna Kreshuk,
+      Wei Ouyang, Florian Jug, Joran Deschamps
+    description:
+    - 'doi: https://doi.org/10.64898/2026.07.21.739486'
+  - title: 'GloBIAS: strengthening the foundations of bioimage analysis'
+    date: '2026'
+    journal: Nature Methods
+    authors: '**Agustin A. Corbat**, Christa G. Walther, Laura R. de la Ballina, Nicholas
+      D. Condon, Alessandro A. Felder, Martin Schätz, Bettina Schmerl, Ko Sugawara,
+      Clara Prats, Anna Klemm, Kota Miura, Paula Sampaio, Christian Tischer, Florian
+      Levet, Rocco D''Antuono, Beth A. Cimini, Robert Haase'
+    description:
+    - 'doi: https://doi.org/10.1038/s41592-026-03060-7'
+  - title: Droplet microfluidics with image texture quantification for detection of rare
+      antibiotic-resistant subpopulations from bloodstream infections
+    date: '2026'
+    journal: npj Digital Medicine
+    authors: Sagar N. Agnihotri, Nikos Fatsis-Kavalopoulos, Emma Vikdahl, Jonas Windhager,
+      '**Agustin A. Corbat**', Dan I. Andersson, Maria Tenje
+    description:
+    - 'doi: https://doi.org/10.1038/s41746-026-02808-x'
+  - title: Reproducibility assessment of a published cell shape transition analysis workflow
+    date: '2026'
+    journal: Journal of Microscopy
+    authors: Esteban A. Miglietta, An-Chi Luo, '**Agustin A. Corbat**', Shao-Chun Hsu
+    description:
+    - 'doi: https://doi.org/10.1111/jmi.70143'
   - title: Ectoderm barcoding reveals neural and cochlear compartmentalization
     date: '2025'
     journal: Science
@@ -440,6 +545,22 @@ Production:
     - Published Paper
     - 'Volume: 19; Issue: June; Pages: 210-217; doi: https://doi.org/10.1016/j.redox.2018.07.023'
   Posters and Oral Presentations:
+  - title: Droplet microfluidics with image texture quantification for detection of rare
+      antibiotic-resistant subpopulations from bloodstream infections
+    date: '2026'
+    event: SMILS 2026 (Swedish network for Microfluidics In Life Sciences)
+    location: Uppsala, Sweden
+    authors: Agnihotri, Sagar; Fatsis Kavalopoulos, Nikos; Vikdahl, Emma; Windhager,
+      Jonas; **Corbat, Agustin A.**; Andersson, Dan I.; Tenje, Maria
+    description:
+    - Poster presentation by Sagar Agnihotri
+  - title: Jornada de Análisis de Imágenes
+    date: '2026'
+    authors: '**Corbat, Agustin**'
+    description:
+    - Plenary talk
+    - 2 sessions on projects and project questions
+    - 'Workshop: "From pixel to quantification"'
   - title: The Core Institutional Memory
     date: '2024'
     event: Democratizing Microscopy in Latin America
